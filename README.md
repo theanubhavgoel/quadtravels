@@ -67,11 +67,11 @@ Edit `data/packages.json` to add, remove, or change packages and prices.
 
 ## Deploy
 
-This is a static site — host for free on [Netlify](https://netlify.com), [GitHub Pages](https://pages.github.com), or [Cloudflare Pages](https://pages.cloudflare.com).
+**Live site:** https://theanubhavgoel.github.io/quad-travels/
 
-1. Push the project to GitHub
-2. Connect the repo to your hosting provider
-3. No build step required — publish the root folder
+Hosted on [GitHub Pages](https://pages.github.com) from the `master` branch. Push updates to GitHub and the site refreshes in a minute or two.
+
+Alternatives: [Netlify](https://netlify.com) or [Cloudflare Pages](https://pages.cloudflare.com) — no build step required, publish the root folder.
 
 ## Contact
 
