@@ -1,0 +1,15 @@
+{
+  "businessName": "Quad Travels",
+  "tagline": "Ride to Explore, Travel to Remember",
+  "phone": "+91 9817728917",
+  "whatsapp": "919817728917",
+  "email": "quadtourandtravels@gmail.com",
+  "address": "Near Football Chowk, Ambala Cantt 133001",
+  "social": {
+    "facebook": "https://facebook.com/quadtravels",
+    "instagram": "https://instagram.com/quadtravels"
+  },
+  "hotelAddonNote": "Hotel stays available on request — quoted separately based on your preferred category and dates.",
+  "currency": "INR",
+  "currencySymbol": "₹"
+}

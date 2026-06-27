@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" id="metaDescription" content="Quad Travels — taxi tours and travel packages across India. Hotel stays available on request.">
+  <title>Quad Travels | Taxi Tours & Travel Packages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚕</text></svg>">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <span class="logo-icon">🚕</span>
+        <span class="logo-text" data-logo>Quad <span>Travels</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact" class="btn btn-nav">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <h1>Explore India with comfort,<br>clarity &amp; fair pricing</h1>
+        <p class="hero-subtitle" id="heroTagline">
+          Ride to Explore, Travel to Remember. AC taxis, experienced drivers,
+          and optional hotel stays — all in one place.
+        </p>
+        <div class="hero-actions">
+          <a href="#packages" class="btn btn-primary">Browse Packages</a>
+          <a href="#" class="btn btn-outline" id="heroWhatsapp">Chat on WhatsApp</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>50+</strong>
+            <span>Cities covered</span>
+          </div>
+          <div class="stat">
+            <strong>12K+</strong>
+            <span>Happy travelers</span>
+          </div>
+          <div class="stat">
+            <strong>4.9★</strong>
+            <span>Average rating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What we offer</span>
+          <h2>Everything you need for a smooth trip</h2>
+          <p>From airport pickups to multi-day road trips — we handle the wheels so you enjoy the journey.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🚗</div>
+            <h3>Taxi &amp; Cab Services</h3>
+            <p>AC sedans, SUVs, and Innova for local sightseeing, airport transfers, and inter-city travel with professional drivers.</p>
+          </article>
+          <article class="service-card featured">
+            <div class="service-icon">🗺️</div>
+            <h3>City Tour Packages</h3>
+            <p>Fixed-price packages for Delhi, Jaipur, Agra, Shimla, Goa and more — transparent pricing with no hidden charges.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🏨</div>
+            <h3>Hotel Add-ons</h3>
+            <p>Need a place to stay? We arrange hotels from budget to premium as an optional add-on, quoted separately for your dates.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>Custom Itineraries</h3>
+            <p>Family vacations, corporate outings, or multi-city routes — tell us your plan and we'll build a package around it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages section section-alt" id="packages">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Tour packages</span>
+          <h2>Popular packages by city</h2>
+          <p>Select a city to filter packages. All prices include taxi service — hotels quoted separately if needed.</p>
+        </div>
+        <div class="filter-bar" id="cityFilter" role="tablist" aria-label="Filter by city">
+          <button class="filter-btn active" data-city="All" role="tab" aria-selected="true">All Cities</button>
+        </div>
+        <div class="packages-grid" id="packagesGrid">
+          <p class="loading">Loading packages…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotels section" id="hotels">
+      <div class="container hotels-inner">
+        <div class="hotels-content">
+          <span class="section-label">Optional add-on</span>
+          <h2>Hotel stays when you need them</h2>
+          <p id="hotelNote">We don't bundle hotels into every package — so you only pay for accommodation when you actually need it.</p>
+          <ul class="hotels-features">
+            <li>Budget, standard &amp; premium categories</li>
+            <li>Verified partner hotels in every package city</li>
+            <li>Quoted based on your travel dates &amp; group size</li>
+            <li>Can be added to any existing tour package</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Request Hotel Quote</a>
+        </div>
+        <div class="hotels-visual">
+          <div class="hotel-card-preview">
+            <span class="hotel-tag">Add-on</span>
+            <h4>Example: Jaipur Package</h4>
+            <div class="price-breakdown">
+              <div class="price-row">
+                <span>Taxi tour package</span>
+                <strong id="exampleTaxiPrice">₹12,499</strong>
+              </div>
+              <div class="price-row addon">
+                <span>+ Hotel (2 nights, standard)</span>
+                <strong>₹4,500</strong>
+              </div>
+              <div class="price-row total">
+                <span>Estimated total</span>
+                <strong>₹16,999</strong>
+              </div>
+            </div>
+            <p class="hotel-disclaimer">Hotel price is indicative — final quote shared on enquiry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Simple process</span>
+          <h2>Book in 4 easy steps</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Choose a package</h3>
+            <p>Browse city packages or ask for a custom itinerary.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Send an enquiry</h3>
+            <p>Fill the form or message us on WhatsApp with your dates and group size.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Get your quote</h3>
+            <p>We confirm taxi pricing and share hotel options if you need them.</p>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <h3>Travel worry-free</h3>
+            <p>Your driver arrives on time. Support available throughout your trip.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Reviews</span>
+          <h2>What travelers say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>"Booked the Agra same-day tour from Delhi. Driver was punctual, car was clean, and the price was exactly as listed. Highly recommend!"</p>
+            <footer>
+              <strong>Priya Sharma</strong>
+              <span>Delhi → Agra, May 2026</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"We added hotel in Jaipur through them — saved us hours of searching. The whole 3-day trip was seamless."</p>
+            <footer>
+              <strong>Rahul &amp; Meera Patel</strong>
+              <span>Jaipur tour, June 2026</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Used their Shimla package for a family of 6. Innova was spacious, driver knew the hill routes well. Will book again."</p>
+            <footer>
+              <strong>Vikram Singh</strong>
+              <span>Shimla, May 2026</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Get in touch</span>
+          <h2>Plan your next trip</h2>
+          <p>Send us your preferred package, travel dates, number of travelers, and whether you need hotel accommodation.</p>
+          <ul class="contact-details" id="contactDetails">
+            <li>
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+919817728917" id="contactPhone">+91 9817728917</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="#" id="contactWhatsapp">Message us</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:quadtourandtravels@gmail.com" id="contactEmail">quadtourandtravels@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Office</strong>
+                <span id="contactAddress">Near Football Chowk, Ambala Cantt 133001</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Send an enquiry</h3>
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91 9817728917">
+          </div>
+          <div class="form-row">
+            <label for="package">Interested package</label>
+            <select id="package" name="package">
+              <option value="">Select a package (optional)</option>
+            </select>
+          </div>
+          <div class="form-row form-row-half">
+            <div>
+              <label for="travelDate">Travel date</label>
+              <input type="date" id="travelDate" name="travelDate">
+            </div>
+            <div>
+              <label for="travelers">Travelers</label>
+              <input type="number" id="travelers" name="travelers" min="1" max="20" value="2">
+            </div>
+          </div>
+          <div class="form-row checkbox-row">
+            <label class="checkbox-label">
+              <input type="checkbox" id="needHotel" name="needHotel">
+              <span>I also need hotel accommodation (extra charges apply)</span>
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any special requests or questions…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send via WhatsApp</button>
+          <p class="form-note">Submitting opens WhatsApp with your details pre-filled. No server or signup required.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">🚕</span>
+          <span class="logo-text" data-logo>Quad <span>Travels</span></span>
+        </a>
+        <p id="footerTagline">Taxi tours and travel packages across India. Hotel stays available on request.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Popular cities</h4>
+        <ul>
+          <li><a href="#packages" data-city-link="Delhi">Delhi</a></li>
+          <li><a href="#packages" data-city-link="Jaipur">Jaipur</a></li>
+          <li><a href="#packages" data-city-link="Agra">Agra</a></li>
+          <li><a href="#packages" data-city-link="Goa">Goa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year"></span> <span id="copyrightName">Quad Travels</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

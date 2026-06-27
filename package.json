@@ -1,0 +1,10 @@
+{
+  "name": "quad-travels",
+  "version": "1.0.0",
+  "description": "Quad Travels — taxi tours and travel packages website",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "serve": "npx --yes serve . -p 8080"
+  }
+}
