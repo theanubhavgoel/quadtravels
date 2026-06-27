@@ -67,7 +67,7 @@ Edit `data/packages.json` to add, remove, or change packages and prices.
 
 ## Deploy
 
-**Live site:** https://theanubhavgoel.github.io/quad-travels/
+**Live site:** https://theanubhavgoel.github.io/quadtravels/
 
 Hosted on [GitHub Pages](https://pages.github.com) from the `master` branch. Push updates to GitHub and the site refreshes in a minute or two.
 
